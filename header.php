@@ -41,9 +41,18 @@ if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_
 	}
 }
 ?>
-<html>
+<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
+
 <div class=headerboite>
-	<div class=menulogo><img src="images/PLANTY.png" alt="logo de Planty"></div>
-	<div class=menurencontrer></div>
-	<div class=menuadmin></div>
-	<div class=menucommander></div>
+	<div class=menulogo>
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/PLANTY.jpg" alt="logo de Planty">
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Vector.jpg" alt="une feuille">
+	</div>
+	<div class=menuboites>
+		<div class=menurencontrer><p class=menup>Nous rencontrer</p></div>
+		<div class=menuadmin><p class=menup>Admin</p></div>
+		<div class=menucommander><p class=menucomp>Commander</p></div>
+	</div>	
+</div>
+</body>
+</html>

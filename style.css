@@ -15,9 +15,11 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
 /* Add your custom styles here */
 
 /* test de git */
+
+
 .footerboite {
-    width: 1440px;
-    height: 60px;
+    display: flex;
+    justify-content: center;
 }
 .footermention {
     font-family: Syne;
@@ -27,4 +29,50 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
+}
+
+
+
+.menup {
+    font-family: Syne;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;    
+    margin: 0;
+}
+
+.menucomp {
+    color: #ffffff;
+    font-family: Syne;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin: 0;
+}
+
+.menuboites {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+}
+.menucommander {
+    background-color: #DC9F96;
+    width: 236px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.headerboite {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
