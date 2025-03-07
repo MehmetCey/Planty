@@ -40,3 +40,37 @@ if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_
 		}
 	}
 }
+?>
+
+<div class="headerboite">
+    <div class="menulogo">
+        <a href="http://localhost/Planty/">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/PLANTY.jpg" alt="logo de Planty">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Vector.jpg" alt="une feuille">
+        </a>
+    </div>
+    <div class="menuboites">
+        <div class="menurencontrer">
+            <a href="http://localhost/Planty/nous-rencontrer/"><p class="menup">Nous rencontrer</p></a>
+        </div>
+        <div class="menucommander">
+            <a href="http://localhost/Planty/commander/"><p class="menucomp">Commander</p></a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+<?php /*
+if ( has_nav_menu( 'header-menu' ) ) {
+    wp_nav_menu( array(
+        'theme_location' => 'header-menu',
+        'container'      => 'nav',
+        'container_class' => 'header-menu',
+        'menu_class'     => 'header-menu-list',
+    ));
+} else {
+    echo '<p>Veuillez attribuer un menu au menu Header dans Apparence > Menus.</p>';
+}
+?>
+*/

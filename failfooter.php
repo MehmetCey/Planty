@@ -22,6 +22,18 @@ if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_
 ?>
 
 <?php wp_footer(); ?>
-
+<div class=footerboite>
+	<p class=footermention>Mentions légales</p>
+</div>
 </body>
 </html>
+<?php
+if ( has_nav_menu( 'footer-menu' ) ) {
+    wp_nav_menu( array(
+        'theme_location' => 'footer-menu',
+        'container'      => 'nav',
+        'container_class' => 'footer-menu',
+        'menu_class'     => 'footer-menu-list',
+    ));
+}
+?>

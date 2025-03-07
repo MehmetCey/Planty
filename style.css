@@ -5,7 +5,7 @@ Description: Hello Elementor Child is a child theme of Hello Elementor, created 
 Author: Elementor Team
 Author URI: https://elementor.com/
 Template: hello-elementor
-Version: 2.0.0
+Version: 3.0.0
 Text Domain: hello-elementor-child
 License: GNU General Public License v3 or later.
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -32,8 +32,130 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
 }
 
 
+.backgroundhome {
+    background-color: #ece2da;
+}
 
-.menup {
+.commander {
+    font-family: Syne;
+    font-weight: 800;
+    font-size: 38px;
+    line-height: 45.6px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #ffffff;
+    margin: 50px 0 40px 0;
+}
+
+.horizontal {
+    width: 100%;
+    margin: 20px 0 30px 0;
+}
+
+.soustitre {
+    font-family: Syne;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0%;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+input[type="number"].case {
+    width: 65px;
+    display: block;
+    margin: 0 auto;
+}
+
+label {
+    font-family: Syne;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #ffffff;
+    margin: 10px 0 10px 0;
+}
+
+input.casetext {
+    width: 383px;
+    height: 71px;
+    border-radius: 7px;
+    padding: 0%;
+    border: 0;
+}
+
+.nomadresse {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bouton-envoyer {
+    width: 198px;
+    height: 55px;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #E0B9B4;
+    border-color: #e0b9b4;
+}
+
+.bouton {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 50px 0;
+}
+
+.bouton-envoyer:hover {
+    background-color: #C02E44;
+    border-color: #C02E44;
+}
+
+.imgnbr {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.imgnbr img {
+    width: 192.53px;
+    height: 128.35px;
+    display: block;
+}
+
+.texte-sur-image {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+.flexcontact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.menu-item-484 a {
     font-family: Syne;
     font-size: 16px;
     font-weight: 400;
@@ -42,9 +164,18 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
     text-underline-position: from-font;
     text-decoration-skip-ink: none;    
     margin: 0;
+    color: black;
 }
 
-.menucomp {
+.menu-item-484 a:hover {
+    font-family: Syne;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15.6px;
+    letter-spacing: 0%;    
+}
+
+.menu-item-483 a {
     color: #ffffff;
     font-family: Syne;
     font-size: 16px;
@@ -56,13 +187,7 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
     margin: 0;
 }
 
-.menuboites {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    align-items: center;
-}
-.menucommander {
+.menu-item-483 {
     background-color: #DC9F96;
     width: 236px;
     height: 80px;
@@ -70,9 +195,29 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
     align-items: center;
     justify-content: center;
 }
-.headerboite {
+.menu-item-483:hover{
+    background-color: #C02E44;
+}
+
+
+.le-header {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
+    padding: 0;
+    position: relative;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+.header-inner {
+    display: flex;
+    width: 100%;
+    margin: 0;
     align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
 }

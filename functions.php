@@ -34,3 +34,12 @@ function hello_elementor_child_scripts_styles() {
 
 }
 add_action( 'wp_enqueue_scripts', 'hello_elementor_child_scripts_styles', 20 );
+
+function theme_enfant_register_menus() {
+    register_nav_menus( array(
+        'monheader' => __( 'Monheader', 'theme-enfant' ),
+		'monfooter' => __( 'Monfooter', 'theme-enfant' ),
+    ));
+}
+add_action( 'after_setup_theme', 'theme_enfant_register_menus' );
+?>
